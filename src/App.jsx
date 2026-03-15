@@ -1,9 +1,8 @@
-import { useState, useEffect, createContext } from "react";
+import { useState, useEffect } from "react";
 import { Navigation } from "./Components/Navigation";
 import { Home } from "./pages/Home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { CoinDetail } from "./pages/CoinDetail";
-export const AppContext = createContext()
 function App() {
   const [coins, setCoins] = useState([]);
   const [input, setInput] = useState("");
